@@ -1,0 +1,52 @@
+<svg width="920" height="240" viewBox="0 0 920 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="veltrix-v-main" x1="72" y1="24" x2="212" y2="176" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#1739D7"/>
+      <stop offset="0.42" stop-color="#1A8FF2"/>
+      <stop offset="1" stop-color="#72F6FF"/>
+    </linearGradient>
+    <linearGradient id="veltrix-v-cut" x1="110" y1="48" x2="190" y2="142" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#7AFFFF"/>
+      <stop offset="1" stop-color="#29B6FF"/>
+    </linearGradient>
+    <linearGradient id="veltrix-tech-line" x1="0" y1="0" x2="180" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#62F1F7"/>
+      <stop offset="1" stop-color="#1F7CF1"/>
+    </linearGradient>
+  </defs>
+
+  <g transform="translate(22 14)">
+    <path
+      d="M49 13H113L158 112L204 13H267L183 176H130L49 13Z"
+      fill="url(#veltrix-v-main)"
+    />
+    <path
+      d="M112 27L182 27L148 77H181L146 127H106L133 88H102L136 39L112 27Z"
+      fill="url(#veltrix-v-cut)"
+      fill-opacity="0.94"
+    />
+    <circle cx="186" cy="41" r="10" fill="#6AF8FF"/>
+    <circle cx="166" cy="62" r="7" fill="#BFFFFF" fill-opacity="0.82"/>
+  </g>
+
+  <g transform="translate(304 52)">
+    <path d="M0 92L30 20H62L23 114H-1L0 92Z" fill="#EEF7FF"/>
+    <path d="M40 114L77 20H109L69 114H40Z" fill="#EEF7FF"/>
+    <path d="M107 20H207V44H155L149 60H193V82H141L134 90H207V114H92L107 20Z" fill="#EEF7FF"/>
+    <path d="M206 20H302L298 44H267L255 114H224L236 44H202L206 20Z" fill="#EEF7FF"/>
+    <path d="M316 20H348L333 114H301L316 20Z" fill="#EEF7FF"/>
+    <path d="M356 20H461L457 44H426L414 114H382L394 44H352L356 20Z" fill="#EEF7FF"/>
+    <path d="M455 20H487L482 52L527 20H570L515 58L555 114H518L490 73L475 84L470 114H438L455 20Z" fill="#EEF7FF"/>
+  </g>
+
+  <g transform="translate(335 176)">
+    <rect x="0" y="17" width="112" height="2.8" rx="1.4" fill="url(#veltrix-tech-line)"/>
+    <rect x="325" y="17" width="112" height="2.8" rx="1.4" fill="url(#veltrix-tech-line)"/>
+    <path d="M126 6H156V12H145V38H137V12H126V6Z" fill="#7EEFFF"/>
+    <path d="M165 6H190V12H173V19H188V25H173V32H191V38H165V6Z" fill="#7EEFFF"/>
+    <path d="M201 6H209L224 26V6H232V38H224L209 18V38H201V6Z" fill="#7EEFFF"/>
+    <path d="M241 6H271V12H260V38H252V12H241V6Z" fill="#7EEFFF"/>
+    <path d="M280 6H305V12H288V19H303V25H288V32H306V38H280V6Z" fill="#7EEFFF"/>
+    <path d="M316 6H331C341 6 348 11 348 20C348 26 345 30 340 32L350 38H338L330 33H324V38H316V6ZM324 12V27H331C336 27 340 24 340 20C340 15 336 12 331 12H324Z" fill="#7EEFFF"/>
+  </g>
+</svg>
