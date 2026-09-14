@@ -13,7 +13,73 @@ if (navToggle && navLinks) {
     link.addEventListener("click", () => {
       navLinks.classList.remove("is-open");
       navToggle.setAttribute("aria-expanded", "false");
-      document.body.classList.remove("menu-open");
+      document.body.classList.remove("menu-open");;;
+    });
+  });
+}
+
+const animateWords = () => {
+  const excludedTags = new Set(["SCRIPT", "STYLE", "NOSCRIPT", "SVG"]);
+  const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
+  const textNodes = [];
+  let currentNode;
+
+  while ((currentNode = walker.nextNode())) {
+    const parent = currentNode.parentElement;
+    if (!parent || !currentNode.nodeValue.trim()) continue;
+    if (excludedTags.has(parent.tagName)) continue;
+    if (
+      parent.closest(
+        "[aria-hidden=\"true\"], .hero-rotator-text, input, textarea, select, option"
+      )
+    ) {
+      continue;
+    }
+    textNodes.push(currentNode);
+  }
+
+  textNodes.forEach((textNode) => {
+    const fragment = document.createDocumentFragment();
+    const parts = textNode.nodeValue.split(/(\s+)/);
+    let wordIndex = 0;
+
+    parts.forEach((part) => {
+      if (!part) return;
+      if (/\s+/.test(part)) {
+        fragment.appendChild(document.createTextNode(part));
+        return;
+      }
+
+      const word = document.createElement("span");
+      word.className = "word-animation";
+      word.textContent = part;
+      word.style.setProperty("--word-index", wordIndex);
+      wordIndex += 1;
+      fragment.appendChild(word);
+    });
+
+    textNode.replaceWith(fragment);
+  });
+};
+
+animateWords();
+
+const projectFilters = document.querySelectorAll(".project-filters button");
+const projectTiles = document.querySelectorAll(".project-tile");
+
+if (projectFilters.length && projectTiles.length) {
+  projectFilters.forEach((filterButton) => {
+    filterButton.addEventListener("click", () => {
+      const selectedFilter = filterButton.dataset.filter;
+
+      projectFilters.forEach((button) => {
+        button.classList.toggle("is-active", button === filterButton);
+      });
+
+      projectTiles.forEach((tile) => {
+        const shouldShow = selectedFilter === "all" || tile.dataset.category === selectedFilter;
+        tile.classList.toggle("is-hidden", !shouldShow);
+      });
     });
   });
 }
@@ -57,13 +123,13 @@ if (navbar) {
   const syncNavbarState = () => {
     const isScrolled = window.scrollY > 18;
     navbar.style.transform = isScrolled ? "translateY(0.15rem)" : "translateY(0)";
-    navbar.style.borderColor = isScrolled ? "rgba(79, 209, 197, 0.2)" : "rgba(255, 255, 255, 0.08)";
-    navbar.style.background = isScrolled ? "rgba(7, 21, 47, 0.84)" : "rgba(7, 21, 47, 0.68)";
+    navbar.style.borderColor = isScrolled ? "rgba(64, 142, 255, 0.48)" : "rgba(64, 142, 255, 0.38)";
+    navbar.style.background = isScrolled ? "rgba(6, 17, 42, 0.88)" : "rgba(6, 17, 42, 0.78)";
     navbar.style.boxShadow = isScrolled ? "0 18px 40px rgba(3, 11, 28, 0.32)" : "none";
   };
 
   syncNavbarState();
-  window.addEventListener("scroll", syncNavbarState, { passive: true });
+  window.addEventListener("scroll", syncNavbarState, { passive: true });;
 }
 
 const heroRotatorText = document.querySelector(".hero-rotator-text");
@@ -251,7 +317,7 @@ if (contactForm) {
     if (selectedMethod.value === "whatsapp") {
       destination = `https://wa.me/254700000000?text=${encodeURIComponent(composedMessage)}`;
     } else {
-      destination = `mailto:veltrixtechnologies.co.ke@gmail.com?subject=${encodeURIComponent("New project inquiry from website")}&body=${encodeURIComponent(composedMessage)}`;
+      destination = `mailto:deecodestechnologies.co.ke@gmail.com?subject=${encodeURIComponent("New project inquiry from website")}&body=${encodeURIComponent(composedMessage)}`;
     }
 
     button.textContent = "Opening...";

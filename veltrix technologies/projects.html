@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="See project examples and product concepts from Veltrix Technologies.">
-  <title>Projects | Veltrix Technologies</title>
+  <meta name="description" content="See project examples and product concepts from Deecodes Technologies.">
+  <title>Projects | Deecodes Technologies</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -12,16 +12,17 @@
     rel="stylesheet"
   >
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
-<body>
+<body class="projects-reference-page">
   <div class="site-shell">
     <div class="ambient-line" aria-hidden="true"></div>
     <header class="page-top">
       <nav class="navbar">
-        <a class="brand" href="index.html" aria-label="Veltrix Technologies home">
-          <img class="brand-mark" src="assets/logo-transparent.png" alt="Veltrix Technologies logo">
+        <a class="brand" href="index.html" aria-label="Deecodes Technologies home">
+          <img class="brand-mark" src="assets/deelogo.png" alt="Deecodes Technologies logo">
           <span class="brand-text">
-            <strong>Veltrix</strong>
+            <strong>Deecodes</strong>
             <span>Technologies</span>
           </span>
         </a>
@@ -39,77 +40,69 @@
           <a class="btn btn-primary" href="contact.html">Get Started</a>
         </div>
       </nav>
-      <section class="section page-hero page-hero-split page-hero-balanced">
-        <div class="page-hero-copy">
-          <p class="eyebrow">Projects</p>
-          <h1>Work that shows how strategy, design, and engineering come together.</h1>
-          <p class="hero-text">Use these project cards as a starter portfolio and replace them with your real client or internal work.</p>
-        </div>
-        <div class="hero-media glass-card">
-          <span class="media-badge">Product Build</span>
-          <video
-            class="hero-video"
-            autoplay
-            muted
-            loop
-            playsinline
-            poster="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=1200&q=80"
-            aria-label="Nighttime software development workspace"
-          >
-            <source src="https://www.pexels.com/download/video/34818829/" type="video/mp4">
-            <source src="https://www.pexels.com/download/video/8266177/" type="video/mp4">
-          </video>
-          <div class="media-caption">
-            <strong>Shipping-focused visuals</strong>
-            <span>The hero now reinforces product delivery before visitors reach the portfolio cards.</span>
+      <section class="section projects-hero">
+        <div class="projects-hero-copy">
+          <p class="eyebrow">Our Projects</p>
+          <h1>Ideas Into<br><span>Real Solutions</span></h1>
+          <p class="hero-text">We build modern, scalable and user-focused digital products. Here are some of the projects we have worked on.</p>
+          <div class="project-filters" role="toolbar" aria-label="Filter projects">
+            <button class="is-active" type="button" data-filter="all">All</button>
+            <button type="button" data-filter="web">Web Apps</button>
+            <button type="button" data-filter="mobile">Mobile Apps</button>
+            <button type="button" data-filter="system">Business Systems</button>
+            <button type="button" data-filter="design">UI/UX Design</button>
+            <button type="button" data-filter="soon">Coming Soon</button>
           </div>
+        </div>
+        <div class="projects-hero-art">
+          <img class="hero-team-photo" src="https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=1200&q=85" alt="African developers coding together in a bright studio">
         </div>
       </section>
     </header>
 
     <main>
-      <section class="section">
-        <div class="card-grid projects-grid projects-grid-wide">
-          <article class="project-card glass-card">
-            <div class="project-image project-one"></div>
-            <h3>Business Landing Platform</h3>
-            <p>A premium marketing website with bold messaging, clear calls to action, and polished visual hierarchy.</p>
-            <a href="contact.html">Request similar work</a>
+      <section class="section projects-showcase">
+        <div class="projects-grid-reference">
+          <article class="project-tile glass-card" data-category="web">
+            <div class="project-visual project-nature"><span class="project-badge">Web App</span></div>
+            <div class="project-tile-copy"><h3>NaturePulse</h3><span class="project-subtitle">Hiking &amp; Travel Company Website</span><p>A modern travel and hiking platform for exploring nature, booking trips and managing adventures.</p><div class="project-tags"><span>HTML</span><span>CSS</span><span>JS</span></div><a href="contact.html">View Project -&gt;</a></div>
           </article>
-          <article class="project-card glass-card">
-            <div class="project-image project-two"></div>
-            <h3>Mobile Booking App</h3>
-            <p>A streamlined booking concept focused on speed, trust, and a smooth customer journey from start to finish.</p>
-            <a href="contact.html">Request similar work</a>
+          <article class="project-tile glass-card" data-category="mobile">
+            <div class="project-visual project-mindloom"><span class="project-badge project-badge-purple">Mobile App</span></div>
+            <div class="project-tile-copy"><h3>Mindloom</h3><span class="project-subtitle">Mental Wellness App</span><p>A React Native + Laravel app for mental health support, counselling and community connection.</p><div class="project-tags"><span>React Native</span><span>Laravel</span></div><a href="contact.html">View Project -&gt;</a></div>
           </article>
-          <article class="project-card glass-card">
-            <div class="project-image project-three"></div>
-            <h3>Analytics Dashboard</h3>
-            <p>A clean internal dashboard concept built to make business reporting easier to read and act on.</p>
-            <a href="contact.html">Request similar work</a>
+          <article class="project-tile glass-card" data-category="system">
+            <div class="project-visual project-echo"><span class="project-badge">Mobile App</span></div>
+            <div class="project-tile-copy"><h3>EchoPay</h3><span class="project-subtitle">Payment &amp; Business Management</span><p>A React Native / Laravel business app for managing M-PESA payments, sales analytics and more.</p><div class="project-tags"><span>React Native</span><span>Laravel</span></div><a href="contact.html">View Project -&gt;</a></div>
+          </article>
+          <article class="project-tile glass-card" data-category="mobile">
+            <div class="project-visual project-kvtvc"><span class="project-badge">Mobile App</span></div>
+            <div class="project-tile-copy"><h3>KTVTC</h3><span class="project-subtitle">College WebView App</span><p>An Expo WebView app wrapping the ktvtc.ac.ke website for easy access and better mobile experience.</p><div class="project-tags"><span>Expo</span><span>React Native</span></div><a href="contact.html">View Project -&gt;</a></div>
+          </article>
+          <article class="project-tile glass-card" data-category="system">
+            <div class="project-visual project-fitzone"><span class="project-badge project-badge-green">Web App</span></div>
+            <div class="project-tile-copy"><h3>FitZone</h3><span class="project-subtitle">Gym Management System</span><p>A Laravel 12 + Vite gym system with QR check-in, packages, cafe wallet, trainer and admin dashboards.</p><div class="project-tags"><span>Laravel</span><span>Vite</span></div><a href="contact.html">View Project -&gt;</a></div>
+          </article>
+          <article class="project-tile glass-card" data-category="soon">
+            <div class="project-visual project-coming"><span class="project-badge project-badge-purple">Upcoming</span></div>
+            <div class="project-tile-copy"><h3>New Project</h3><span class="project-subtitle">AI-Powered Social Media Manager</span><p>An AI tool to create images and captions, schedule posts and integrate with Meta.</p><div class="project-tags"><span>Laravel</span><span>React Native</span></div><a href="contact.html">View Project -&gt;</a></div>
           </article>
         </div>
+        <div class="projects-cta glass-card"><span class="projects-cta-icon" aria-hidden="true"><i class="fa-solid fa-lightbulb"></i></span><div><h2>Have a Project in Mind?</h2><p>Let's build something great together. Reach out and we'll turn your idea into a powerful solution.</p></div><a class="btn btn-primary" href="contact.html">Get Started <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a></div>
       </section>
     </main>
 
     <footer class="footer">
       <div class="footer-brand">
-        <a class="brand" href="index.html">
-          <img class="brand-mark" src="assets/logo-transparent.png" alt="Veltrix Technologies logo">
-          <span class="brand-text">
-            <strong>Veltrix</strong>
-            <span>Technologies</span>
-          </span>
-        </a>
-        <p>Modern websites, mobile apps, and digital systems built with clarity and care.</p>
+        <a class="brand" href="index.html"><img class="brand-mark" src="assets/deelogo.png" alt="Deecodes Technologies logo"><span class="brand-text"><strong>Deecodes</strong><span>Technologies</span></span></a>
+        <p>We design, develop and deliver digital solutions that help businesses grow and succeed in the modern world.</p>
+        <div class="social-links" aria-label="Social links"><a class="social-link" href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a><a class="social-link" href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a><a class="social-link" href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a><a class="social-link" href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a></div>
       </div>
-      <div class="footer-links">
-        <a href="about.html">About</a>
-        <a href="services.html">Services</a>
-        <a href="projects.html">Projects</a>
-        <a href="contact.html">Contact</a>
-      </div>
-      <p class="copyright">&copy; 2026 Veltrix Technologies. All rights reserved.</p>
+      <div class="footer-column"><h3>Quick Links</h3><a href="index.html">Home</a><a href="about.html">About Us</a><a href="services.html">Services</a><a href="projects.html">Projects</a><a href="contact.html">Contact</a></div>
+      <div class="footer-column"><h3>Services</h3><a href="services.html">Custom Software</a><a href="services.html">Mobile Apps</a><a href="services.html">AI Solutions</a><a href="services.html">Web Development</a><a href="services.html">Cloud Solutions</a><a href="services.html">UI/UX Design</a></div>
+      <div class="footer-column"><h3>Company</h3><a href="about.html">About Us</a><a href="contact.html">Careers</a><a href="projects.html">Blog</a><a href="contact.html">Privacy Policy</a><a href="contact.html">Terms of Service</a></div>
+      <div class="footer-column newsletter"><h3>Newsletter</h3><p>Stay updated with our latest news and insights.</p><form><input type="email" placeholder="Enter your email" aria-label="Email address"><button type="submit" aria-label="Subscribe">-&gt;</button></form></div>
+      <p class="copyright">&copy; 2026 Deecodes Technologies. All rights reserved.</p>
     </footer>
   </div>
 

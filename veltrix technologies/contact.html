@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Contact Veltrix Technologies to start your website, app, or digital product project.">
-  <title>Contact | Veltrix Technologies</title>
+  <meta name="description" content="Contact Deecodes Technologies to start your website, app, or digital product project.">
+  <title>Contact | Deecodes Technologies</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -12,16 +12,17 @@
     rel="stylesheet"
   >
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
-<body>
+<body class="contact-reference-page">
   <div class="site-shell">
     <div class="ambient-line" aria-hidden="true"></div>
     <header class="page-top">
       <nav class="navbar">
-        <a class="brand" href="index.html" aria-label="Veltrix Technologies home">
-          <img class="brand-mark" src="assets/logo-transparent.png" alt="Veltrix Technologies logo">
+        <a class="brand" href="index.html" aria-label="Deecodes Technologies home">
+          <img class="brand-mark" src="assets/deelogo.png" alt="Deecodes Technologies logo">
           <span class="brand-text">
-            <strong>Veltrix</strong>
+            <strong>Deecodes</strong>
             <span>Technologies</span>
           </span>
         </a>
@@ -39,141 +40,58 @@
           <a class="btn btn-primary" href="contact.html">Get Started</a>
         </div>
       </nav>
-      <section class="section page-hero page-hero-split">
-        <div class="page-hero-copy">
-          <p class="eyebrow">Contact</p>
-          <h1>Let's build something strong together.</h1>
-          <p class="hero-text">Tell us what you want to create and we will help shape the next step with you.</p>
-        </div>
-        <div class="hero-media glass-card">
-          <span class="media-badge">Engineering Team</span>
-          <video
-            class="hero-video"
-            autoplay
-            muted
-            loop
-            playsinline
-            poster="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=80"
-            aria-label="Developers coding together"
-          >
-            <source src="https://www.pexels.com/download/video/34704446/" type="video/mp4">
-            <source src="https://www.pexels.com/download/video/11274330/" type="video/mp4">
-          </video>
-          <div class="media-caption">
-            <strong>Start with momentum</strong>
-            <span>The first view now signals a hands-on technical team before the form section.</span>
+      <section class="section contact-hero">
+        <div class="contact-intro">
+          <p class="eyebrow">Get In Touch</p>
+          <h1>Let's Build<br><span>Something Great</span></h1>
+          <p class="hero-text">Have a project in mind, a question, or just want to say hello? We would love to hear from you. Reach out and let's turn your ideas into real solutions.</p>
+          <div class="contact-benefits">
+            <article><span class="contact-benefit-icon" aria-hidden="true"><i class="fa-solid fa-bolt"></i></span><strong>Fast Response</strong><p>We reply within<br>24 hours.</p></article>
+            <article><span class="contact-benefit-icon" aria-hidden="true"><i class="fa-solid fa-headset"></i></span><strong>Professional Support</strong><p>Get expert help<br>whenever you need it.</p></article>
+            <article><span class="contact-benefit-icon" aria-hidden="true"><i class="fa-solid fa-lightbulb"></i></span><strong>Your Vision Matters</strong><p>We are here to bring<br>your ideas to life.</p></article>
           </div>
         </div>
+
+        <form class="contact-form glass-card">
+          <div class="form-heading"><p class="eyebrow">Send Us A Message</p><h2>Contact Form</h2><p>Fill in the form below and we will get back to you as soon as possible.</p></div>
+          <div class="form-row">
+            <label>Full Name *<input type="text" name="name" placeholder="Your name"></label>
+            <label>Email Address *<input type="email" name="email" placeholder="you@example.com"></label>
+          </div>
+          <label>Subject *<select name="subject"><option value="">Select a subject</option><option>Website Design</option><option>Software Development</option><option>Mobile App</option><option>General Inquiry</option></select></label>
+          <label>Message *<textarea name="message" rows="5" placeholder="Tell us about your project..."></textarea></label>
+          <div class="send-options" hidden>
+            <p class="send-options-label">Choose where to send this message:</p>
+            <div class="send-options-grid" role="radiogroup" aria-label="Send method">
+              <label class="send-option"><input type="radio" name="sendMethod" value="whatsapp"><span>WhatsApp</span></label>
+              <label class="send-option"><input type="radio" name="sendMethod" value="email"><span>Email</span></label>
+            </div>
+          </div>
+          <button class="btn btn-primary" type="submit"><i class="fa-solid fa-paper-plane" aria-hidden="true"></i> Send Message</button>
+        </form>
       </section>
     </header>
 
     <main>
-      <section class="section contact">
-        <div class="contact-grid">
-          <div class="contact-panel glass-card">
-            <h3>Start a project</h3>
-            <p>Share your goals, your timeline, and the type of solution you need. We will help you shape a strong direction.</p>
-            <ul class="contact-list">
-              <li><strong>Phone</strong><a href="tel:+254746899732">+254 746899732</a></li>
-              <li><strong>Email</strong><a href="mailto:veltrixtechnologies.co.ke@gmail.com">veltrixtechnologies.co.ke@gmail.com</a></li>
-              <li><strong>Location</strong><span>Nairobi, Kenya</span></li>
-            </ul>
-            <div class="social-links" aria-label="Veltrix social links">
-              <a class="social-link social-whatsapp" href="https://wa.me/254746899732" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
-                <svg viewBox="0 0 24 24" aria-hidden="true">
-                  <path d="M19.05 4.94A9.8 9.8 0 0 0 12.04 2c-5.45 0-9.88 4.43-9.88 9.88 0 1.74.45 3.43 1.3 4.92L2 22l5.35-1.4a9.84 9.84 0 0 0 4.69 1.19h.01c5.45 0 9.88-4.43 9.88-9.88a9.8 9.8 0 0 0-2.88-6.97Zm-7.01 15.18h-.01a8.16 8.16 0 0 1-4.16-1.14l-.3-.18-3.18.83.85-3.1-.2-.32a8.2 8.2 0 0 1-1.26-4.35c0-4.53 3.69-8.22 8.23-8.22 2.2 0 4.27.86 5.83 2.41a8.17 8.17 0 0 1 2.4 5.82c0 4.54-3.69 8.23-8.2 8.23Zm4.51-6.14c-.25-.13-1.48-.73-1.71-.81-.23-.08-.4-.13-.57.12-.17.25-.65.81-.8.97-.15.17-.3.19-.55.06-.25-.13-1.06-.39-2.02-1.23-.74-.66-1.24-1.47-1.39-1.72-.15-.25-.02-.38.11-.51.11-.11.25-.3.38-.44.13-.15.17-.25.25-.42.08-.17.04-.32-.02-.45-.06-.13-.57-1.36-.78-1.87-.21-.49-.42-.42-.57-.43h-.49c-.17 0-.45.06-.68.32-.23.25-.88.86-.88 2.09 0 1.23.9 2.42 1.03 2.59.13.17 1.77 2.7 4.29 3.79.6.26 1.06.42 1.42.54.6.19 1.14.16 1.57.1.48-.07 1.48-.61 1.69-1.2.21-.59.21-1.09.15-1.2-.06-.11-.23-.17-.48-.3Z"/>
-                </svg>
-              </a>
-              <a class="social-link social-facebook" href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
-                <svg viewBox="0 0 24 24" aria-hidden="true">
-                  <path d="M13.5 22v-8.2h2.77l.42-3.22H13.5V8.53c0-.93.26-1.56 1.59-1.56h1.7V4.09c-.29-.04-1.3-.09-2.47-.09-2.45 0-4.13 1.49-4.13 4.24v2.34H7.5v3.22h2.69V22h3.31Z"/>
-                </svg>
-              </a>
-              <a class="social-link social-instagram" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-                <svg viewBox="0 0 24 24" aria-hidden="true">
-                  <path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2Zm0 1.75A4 4 0 0 0 3.75 7.75v8.5a4 4 0 0 0 4 4h8.5a4 4 0 0 0 4-4v-8.5a4 4 0 0 0-4-4h-8.5Zm8.94 1.31a1.19 1.19 0 1 1 0 2.38 1.19 1.19 0 0 1 0-2.38ZM12 6.72A5.28 5.28 0 1 1 6.72 12 5.29 5.29 0 0 1 12 6.72Zm0 1.75A3.53 3.53 0 1 0 15.53 12 3.53 3.53 0 0 0 12 8.47Z"/>
-                </svg>
-              </a>
-              <a class="social-link social-x" href="https://x.com/" target="_blank" rel="noopener noreferrer" aria-label="X">
-                <svg viewBox="0 0 24 24" aria-hidden="true">
-                  <path d="M18.9 2H22l-6.77 7.74L23.2 22h-6.25l-4.9-6.77L6.13 22H3l7.24-8.28L1 2h6.4l4.43 6.17L18.9 2Zm-1.09 18h1.73L6.46 3.89H4.61L17.81 20Z"/>
-                </svg>
-              </a>
-            </div>
-          </div>
-
-          <form class="contact-form glass-card">
-            <label>
-              Name
-              <input type="text" name="name" placeholder="Your name">
-            </label>
-            <label>
-              Email
-              <input type="email" name="email" placeholder="you@example.com">
-            </label>
-            <label>
-              Message
-              <textarea name="message" rows="5" placeholder="Tell us about your project"></textarea>
-            </label>
-            <div class="send-options" hidden>
-              <p class="send-options-label">Choose where to send this message:</p>
-              <div class="send-options-grid" role="radiogroup" aria-label="Send method">
-                <label class="send-option">
-                  <input type="radio" name="sendMethod" value="whatsapp">
-                  <span>WhatsApp</span>
-                </label>
-                <label class="send-option">
-                  <input type="radio" name="sendMethod" value="email">
-                  <span>Email</span>
-                </label>
-              </div>
-            </div>
-            <button class="btn btn-primary" type="submit">Send Message</button>
-          </form>
-        </div>
-
-        <div class="map-panel glass-card">
-          <div class="map-copy">
-            <p class="eyebrow">Our Location</p>
-            <h2>Based in Nairobi and ready to work with clients from any part of the world.</h2>
-            <p>
-              Use the map below to locate Veltrix Technologies in Nairobi, Kenya, or open it in
-              your preferred maps app for directions and easier navigation.
-            </p>
-            <a class="btn btn-secondary" href="https://www.google.com/maps?q=Nairobi,Kenya" target="_blank" rel="noopener noreferrer">
-              Open In Maps
-            </a>
-          </div>
-          <div class="map-embed">
-            <iframe
-              title="Map showing Nairobi, Kenya"
-              src="https://www.google.com/maps?q=Nairobi,Kenya&z=12&output=embed"
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-            ></iframe>
-          </div>
-        </div>
+      <section class="section contact-details">
+        <article class="contact-detail-card glass-card"><span class="detail-icon" aria-hidden="true"><i class="fa-solid fa-envelope"></i></span><div><strong>Email Us</strong><a href="mailto:deecodestechnologies.co.ke@gmail.com">deecodestechnologies.co.ke@gmail.com</a></div><span class="detail-arrow" aria-hidden="true"><i class="fa-solid fa-arrow-right"></i></span></article>
+        <article class="contact-detail-card glass-card"><span class="detail-icon" aria-hidden="true"><i class="fa-solid fa-phone"></i></span><div><strong>Call Us</strong><a href="tel:+254746899732">+254 746 899 732</a></div><span class="detail-arrow" aria-hidden="true"><i class="fa-solid fa-arrow-right"></i></span></article>
+        <article class="contact-detail-card glass-card"><span class="detail-icon" aria-hidden="true"><i class="fa-solid fa-location-dot"></i></span><div><strong>Our Location</strong><span>Nairobi, Kenya</span></div><span class="detail-arrow" aria-hidden="true"><i class="fa-solid fa-arrow-right"></i></span></article>
+        <article class="contact-detail-card glass-card"><span class="detail-icon" aria-hidden="true"><i class="fa-solid fa-clock"></i></span><div><strong>Business Hours</strong><span>Mon - Fri: 8:00 AM - 6:00 PM<br>Sat - Sun: 10:00 AM - 4:00 PM</span></div><span class="detail-arrow" aria-hidden="true"><i class="fa-solid fa-arrow-right"></i></span></article>
       </section>
     </main>
 
     <footer class="footer">
       <div class="footer-brand">
-        <a class="brand" href="index.html">
-          <img class="brand-mark" src="assets/logo-transparent.png" alt="Veltrix Technologies logo">
-          <span class="brand-text">
-            <strong>Veltrix</strong>
-            <span>Technologies</span>
-          </span>
-        </a>
-        <p>Modern websites, mobile apps, and digital systems built with clarity and care.</p>
+        <a class="brand" href="index.html"><img class="brand-mark" src="assets/deelogo.png" alt="Deecodes Technologies logo"><span class="brand-text"><strong>Deecodes</strong><span>Technologies</span></span></a>
+        <p>We design, develop and deliver digital solutions that help businesses grow and succeed in the modern world.</p>
+        <div class="social-links" aria-label="Social links"><a class="social-link" href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a><a class="social-link" href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a><a class="social-link" href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a><a class="social-link" href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a></div>
       </div>
-      <div class="footer-links">
-        <a href="about.html">About</a>
-        <a href="services.html">Services</a>
-        <a href="projects.html">Projects</a>
-        <a href="contact.html">Contact</a>
-      </div>
-      <p class="copyright">&copy; 2026 Veltrix Technologies. All rights reserved.</p>
+      <div class="footer-column"><h3>Quick Links</h3><a href="index.html">Home</a><a href="about.html">About Us</a><a href="services.html">Services</a><a href="projects.html">Projects</a><a href="contact.html">Contact</a></div>
+      <div class="footer-column"><h3>Services</h3><a href="services.html">Custom Software</a><a href="services.html">Mobile Apps</a><a href="services.html">AI Solutions</a><a href="services.html">Web Development</a><a href="services.html">Cloud Solutions</a><a href="services.html">UI/UX Design</a></div>
+      <div class="footer-column"><h3>Company</h3><a href="about.html">About Us</a><a href="contact.html">Careers</a><a href="projects.html">Blog</a><a href="contact.html">Privacy Policy</a><a href="contact.html">Terms of Service</a></div>
+      <div class="footer-column newsletter"><h3>Newsletter</h3><p>Stay updated with our latest news and insights.</p><form><input type="email" placeholder="Enter your email" aria-label="Email address"><button type="submit" aria-label="Subscribe">-&gt;</button></form></div>
+      <p class="copyright">&copy; 2026 Deecodes Technologies. All rights reserved.</p>
     </footer>
   </div>
 
